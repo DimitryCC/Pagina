@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Estilo/Inicio_De_Sesion.css">
     <title>To Citas</title>
 </head>
 <body>
-    
+    <main><!--El elemento HTML <main> representa el contenido dominante del <body> de un documento. El área de contenido principal consiste en contenido que está directamente relacionado o amplía el tema central de un documento,-->
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya cuentas con To Citas?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no cuentas con Una cuenta de To Citas?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Regístrarse</button>
+                </div>
+            </div>
+
+            <!--Formulario de Login y registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form action="" class="formulario__login" novalidate onsubmit="alert(hola)">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" placeholder="Nombre de Usuario">
+                    <input type="password" placeholder="Contraseña">
+                    <input type="submit" value="">
+                </form>
+                <!--Register-->
+                <form action="" class="formulario__register">
+                    <h2>Regístrarse</h2>
+                    <input type="text" placeholder="Nombre completo">
+                    <input type="text" placeholder="Correo Electronico">
+                    <input type="text" placeholder="Usuario">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Regístrarse</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

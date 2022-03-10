@@ -1,9 +1,8 @@
 html, body * { box-sizing: border-box; font-family: 'Open Sans', sans-serif; }
 
 body {
-  background-image: url(https://caracteres.mx/wp-content/uploads/2014/02/pareja-feliz.jpg);
+  background-image: url(https://i0.wp.com/www.somospsicologos.es/wp-content/uploads/2020/09/parejas-felices-bienestar-mutuo.jpg?fit=1114%2C743&ssl=1);
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
 	position: relative;
 }

@@ -1,0 +1,43 @@
+.header-holder{
+    background-color: #ff8787;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    align-items: center;
+}
+#Seleccionado{
+    background-color: #87ffff;
+    display: block;
+    font-size: 15px;
+    padding: 0 15px;
+    height: 100%;
+    line-height: 70px;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+}
+.boton{
+    display: block;
+    font-size: 15px;
+    padding: 0 15px;
+    height: 100%;
+    line-height: 70px;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+}
+.header-holder :hover{
+    background-color: #87ffff ;
+}
+#logo{
+    margin-top: 4px;
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+}
+.copyright{
+    padding: 400px;
+    align: center;
+}

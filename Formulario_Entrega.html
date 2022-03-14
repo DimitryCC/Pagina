@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilo/boton.css">
+    <link rel="stylesheet" href="./Estilo/Estilo.css">
+    <link rel="stylesheet" href="/PAGINA/Estilo/CosasNoEsenciales.css">
+    <script src="/PAGINA/JS/Chequers.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-holder">
+        <div><img src="fotos/corazon.jpg" id="logo"></div>
+        <li style="margin-left: 30px;" ></li>
+        <li class="boton"><h4>Inicio</h4></li>
+        <li class="boton"><h4>Buscar Pareja</h4></li>
+        <li class="boton"><h4>Perfil</h4></li>
+        <li class="boton"><h4>Cambiar plan de pagos<h4></li>
+        <li id="Seleccionado"><h4>Crear Cuenta</h4></li>
+    </header>
+    <br/>
+    <div id="Contenedor_Form">
+    <form name="formulario" id="formulario" method="post" novalidate onsubmit="return validarform()">
+            <fieldset id="GrupoA" class="Grupos">
+                <label for="id_nombre">Nombre Completo<samp id="Nombre_Spam" style="font-weight: bold; color: red;"></samp></label><br>
+                <input
+                    id="id_nombrei"
+                    type="text"
+                    maxlength="60"
+                    name="nombre"
+                    placeholder="Nombre y Apellido (Primera letra en mayúscula, segundo apellido opcional)"
+                    title="Nombre"/>
+                <br/>
+                <p>Número de teléfono <br/> <samp id="Numero_Spam" style="font-weight: bold; color: red;"></samp></p>
+                <div class="telefono">
+                    <div id="prefijo">
+                        <label for="id_prefijo">Prefijo</label><br>
+                            <select name="Prefijo" id="id_prefijo">
+                                <option value="+7">Rusia</option>
+                                <option value="+30">Grecia</option>
+                                <option value="+31">Paises Bajos</option>
+                                <option value="+32">Belgica</option>
+                                <option value="+34" selected>España</option>
+                            </select>
+                    </div>
+                    <div id="numero">
+                        <label for="id_NumeroTelefono">Número</label><br/>
+                        <input id="id_NumeroTelefono"
+                        type="number"
+                        name="Numero"
+                        placeholder="XXX-XX-XX-XX"
+			maxlength="9"
+                        title="Numero De telefono"/>
+                    </div>
+                </div>
+                <br>
+                <label for="id_meil">Correo electrónico<samp id="Correo_Spam" style="font-weight: bold; color: red;"></samp></label><br>
+                <input id="id_meil"
+                type="text"
+                name="Meil"
+                placeholder="Persona@gmail.com"
+                title="Meil"/> <br/>
+                <label for="id_nacimiento">Fecha de nacimineto<samp id="Fecha_Spam"  style="font-weight: bold; color: red;"></samp></label><br>
+                <input id="id_nacimientoi"
+                type="date"
+                name="Nacimineto"
+                title="Fecha de nacimineto"/>
+                <br/>
+                <div class="radio" >
+                <p>Supscripción <samp id="suscription_spam" style="font-weight: bold; color: red;"></samp></p>
+                <label><input type="radio" name="subscripcion" class="radio" selected >Gratis</label>
+                <label><input type="radio" name="subscripcion" class="radio" >Premium</label>
+                <br/>
+                </div>
+                <div>
+                <!--Estos son géneros reales y no es ningún tipo de burla ni mofa, la información es correcta y dejo aquí un enlace donde encontrará todos los géneros y su definición-->
+                <!--https://pablomunoziturrieta.com/2018/11/13/los-famosos-112-generos/-->
+                    <label for="Generos">Géneros <samp id="genero_spam" style="font-weight: bold; color: red;"></samp></label><br>
+                    <select name="Genero" id="Generos">
+                        <option value="vacio" selected>...</option>
+                        <option value="Cisgénero (Hombre)">Cisgénero (Hombre)</option>
+                        <option value="Cisgénero (Mujer)">Cisgénero (Mujer)</option>
+                        <option value="Abimegénero">Abimegénero</option>
+                        <option value="Adamasgénero">Adamasgénero</option>
+                        <option value="Aerogénero">Aerogénero</option>
+                        <option value="Aestetigénero">Aestetigénero</option>
+                        <option value="Afectogénero">Afectogénero</option>
+                        <option value="Agénero">Agénero</option>
+                        <option value="Agéneroflujo">Agéneroflujo</option>
+                        <option value="Alexigénero">Alexigénero</option>
+                        <option value="Aliusgénero">Aliusgénero</option>
+                        <option value="Amaregénero">Amaregénero</option>
+                        <option value="Ambigénero">Ambigénero</option>
+                        <option value="Ambonec">Ambonec</option>
+                        <option value="Amicagénero">Amicagénero</option>
+                        <option value="Andrógino">Andrógino</option>
+                        <option value="Anesigénero">Anesigénero</option>
+                        <option value="Angenital">Angenital</option>
+                        <option value="Anogénero">Anogénero</option>
+                        <option value="Anongénero">Anongénero</option>
+                        <option value="Antegénero">Antegénero</option>
+                        <option value="Anxiegénero">Anxiegénero</option>
+                        <option value="Apagénero">Apagénero</option>
+                        <option value="Apconsugénero">Apconsugénero</option>
+                        <option value="Astergénero">Astergénero</option>
+                        <option value="Astralgénero">Astralgénero</option>
+                        <option value="Autigénero">Autigénero</option>
+                        <option value="Autogénero">Autogénero</option>
+                        <option value="Axigénero">Axigénero</option>
+                        <option value="Bigénero">Bigénero</option>
+                        <option value="Biogénero">Biogénero</option>
+                        <option value="Blurgénero">Blurgénero</option>
+                        <option value="Flujo Chico">Flujo Chico</option>
+                        <option value="Burstgénero">Burstgénero</option>
+                        <option value="Caelgénero">Caelgénero</option>
+                        <option value="Cassgénero">Cassgénero</option>
+                        <option value="Cassflujo">Cassflujo</option>
+                        <option value="Cavusgénero">Cavusgénero</option>
+                        <option value="Cendgénero">Cendgénero</option>
+                        <option value="Ceterofluido">Ceterofluido</option>
+                        <option value="Ceterogénero">Ceterogénero</option>
+                        <option value="Género Nublado">Género Nublado</option>
+                        <option value="Collgénero">Collgénero</option>
+                        <option value="Colorgénero">Colorgénero</option>
+                        <option value="Comogénero">Comogénero</option>
+                        <option value="Condigénero">Condigénero</option>
+                        <option value="Deliciagénero">Deliciagénero</option>
+                        <option value="Demifluido">Demifluido</option>
+                        <option value="Demiflujo">Demiflujo</option>
+                        <option value="Demigénero">Demigénero</option>
+                        <option value="Domgénero">Domgénero</option>
+                        <option value="Duragénero">Duragénero</option>
+                        <option value="Egogénero">Egogénero</option>
+                        <option value="Epiceno">Epiceno</option>
+                        <option value="Espigénero">Espigénero</option>
+                        <option value="Exgénero">Exgénero</option>
+                        <option value="Existigénero">Existigénero</option>
+                        <option value="Femfluido">Femfluido</option>
+                        <option value="Femgénero">Femgénero</option>
+                        <option value="Flujo fluido">Flujo fluido</option>
+                        <option value="Gemigénero">Gemigénero</option>
+                        <option value="Género vacío">Género vacío</option>
+                        <option value="Género corriente">Género corriente</option>
+                        <option value="Género fluido">Género fluido</option>
+                        <option value="Género flujo">Género flujo</option>
+                        <option value="Género pelusa">Género pelusa</option>
+                        <option value="Género neutral">Género neutral</option>
+                        <option value="Género punk">Género punk</option>
+                        <option value="Género queer">Género queer</option>
+                        <option value="Género embrujado">Género embrujado</option>
+                        <option value="Flujo Chica">Flujo Chica</option>
+                        <option value="Género Cristal">Género Cristal</option>
+                        <option value="Género Destello">Género Destello</option>
+                        <option value="Género Gris">Género Gris</option>
+                        <option value="Girogénero">Girogénero</option>
+                        <option value="Género Sanador">Género Sanador</option>
+                        <option value="Heliogénero">Heliogénero</option>
+                        <option value="Hemigénero">Hemigénero</option>
+                        <option value="Horogénero">Horogénero</option>
+                        <option value="Hidrogénero">Hidrogénero</option>
+                        <option value="Imperigénero">Imperigénero</option>
+                        <option value="Intergénero">Intergénero</option>
+                        <option value="Juxera">Juxera</option>
+                        <option value="Libragénero">Libragénero</option>
+                        <option value="Magigénero">Magigénero</option>
+                        <option value="Mascfluido">Mascfluido</option>
+                        <option value="Mascgénero">Mascgénero</option>
+                        <option value="Maverique">Maverique</option>
+                        <option value="Género espejo">Género espejo</option>
+                        <option value="Molligénero">Molligénero</option>
+                        <option value="Multigénero">Multigénero</option>
+                        <option value="Nanogénero">Nanogénero</option>
+                        <option value="Neutrois">Neutrois</option>
+                        <option value="No binario">No binario</option>
+                        <option value="Omnigénero">Omnigénero</option>
+                        <option value="Oneirogénero">Oneirogénero</option>
+                        <option value="Pangénero">Pangénero</option>
+                        <option value="Paragénero">Paragénero</option>
+                        <option value="Perigénero">Perigénero</option>
+                        <option value="Polygénero">Polygénero</option>
+                        <option value="Proxvir">Proxvir</option>
+                        <option value="Quoigénero">Quoigénero</option>
+                        <option value="subgénero">Subgénero</option>
+                        <option value="Surgénero">Surgénero</option>
+                        <option value="Sistemgénero">Sistemgénero</option>
+                        <option value="Tragénero">Tragénero</option>
+                        <option value="Transgénero">Transgénero</option>
+                        <option value="Trigénero">Trigénero</option>
+                        <option value="Vapogénero">Vapogénero</option>
+                        <option value="Venngénero">Venngénero</option>
+                        <option value="Verangénero">Verangénero</option>
+                        <option value="Vibragénero">Vibragénero</option>
+                        <option value="Vocigénero">Vocigénero</option>
+                        <option value="Vocigénero">Vocigénero</option>
+                    </select>
+                </div>
+
+            </fieldset>
+<button class="button" type="submit"><span class="heart"></span></button>
+            <Fieldset id="GrupoB" class="Grupos">
+            <div id="NickNameYDistancia">
+                <label for="id_Nick">Apodo <samp id="Nick_Spam" style="font-weight: bold; color: red;"></samp></label><br/>
+                <input
+                    id="id_Nick"
+                    type="text"
+                    maxlength="25"
+                    name="Nick"
+                    placeholder="Nick"
+                    title="Nick"/>
+            <br/>
+                <label for="id_distancia">Distancia de búsqueda<samp style="font-weight: bold; color: red;"></samp></label><br/><pre style="font-weight: bold;">10 km      10000 km</pre>
+                <input
+                type="range"
+                id="id_distancia"
+                min="1"
+                max="1000"
+                step="1"/>
+            <div id="contra"> <br/>
+                <label for="id_contraseña">Contraseña<samp id="Spam_Contraseña1" style="font-weight: bold; color: red;"></samp></label><br/>
+                <input type="password"
+                id="id_contraseña"
+                maxlength="16"
+                placeholder="contraseña"
+                title="Password"/>
+                <br/>
+                <label for="id_contraseña2">Comprobar Contraseña<samp id="Spam_Contraseña2" style="font-weight: bold; color: red;"></samp></label><br/>
+                <input type="password"
+                id="id_contraseña2"
+                maxlength="16"
+                placeholder="contraseña2"
+                title="Password2"/>
+            </div>
+            </div>
+            <div id="Intereses">
+            <p>Intereses: <samp id="Spam_Checkbox" style="font-weight: bold; color: red;"></samp></p><br/>
+                <label><input type="checkbox"  class="aficiones" name="check" >Yoga</input></label>
+                <label><input type="checkbox"  class="aficiones" name="check" >Leer</input></label> <br/>
+                <label><input type="checkbox"  class="aficiones" name="check" >Deporte</input></label>
+                <label><input type="checkbox"  class="aficiones" name="check" >Escuchar música</input></label>
+                <label><input type="checkbox"  class="aficiones" name="check" >Bailar</input></label>
+                <label><input type="checkbox"  class="aficiones" name="check" >Escribir</input></label><br/>
+                <label><input type="checkbox"  class="aficiones" name="check" >Bricolaje</input></label>
+                <label><input type="checkbox"  class="aficiones" name="check" >Pintar</input></label>
+                <label><input type="checkbox"  class="aficiones" name="check" >Cocinar</input></label><br/>
+            </div>
+            <label for="id_bio"> Biografia</label><br/>
+                <input
+                    id="id_bio"
+                    type="text"
+                    rows="10"
+                    cols="40"
+                    name="Nick"
+                    placeholder="Hola"
+                    title="Nick"/>
+            </Fieldset>
+        </form>
+    </div>
+    <div class="copyright" align="center">
+        <script>
+            document.write('&copy;' );
+            document.write(' 2022 - ');
+            document.write(new Date().getFullYear());
+            document.write(' www.CitasRomanticas.com - All Rights Reserved.');
+        </script>
+    </div>
+</body>
+</html>

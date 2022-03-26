@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilo/reset.css">
     <link rel="stylesheet" href="./Estilo/Inicio_De_Sesion.css">
     <script src="./JS/EjecucionInicio.js"></script>
     <link rel="stylesheet" href="./Estilo/CosasNoEsenciales.css">
@@ -11,29 +12,28 @@
     <title>To Citas</title>
 </head>
 <body>
-    <header class="header-holder">
-        <div><img src="fotos/corazon.jpg" id="logo"></div>
-        <li style="margin-left: 30px;" ></li>
-        <li class="boton"><h4>Inicio</h4></li>
-        <li class="boton"><h4>Buscar Pareja</h4></li>
-        <li class="boton"><h4>Perfil</h4></li>
-        <li class="boton"><h4>Cambiar plan de pagos<h4></li>
-        <li id="Seleccionado"><h4>Crear Cuenta</h4></li>
-    </header>
+<header class="header-holder">
+    <div><img class="small-logo-picture" alt="Logo de la empresa" src="fotos/corazon.png" id="logo"></div>
+    <li style="margin-left: 30px;" ></li>
+    <li class="boton"> <a href="Index.html"> <h4>Inicio</h4></a></li>
+    <li class="boton"> <a href="Pagian_Personal.html"> <h4>Perfil</h4></a></li>
+    <li class="boton"> <a href="Registrarse.html"> <h4>Cambiar plan de pagos</h4></a></li>
+    <li class="boton-Seleccionado"> <a href="Formulario_Entrega.html" > <h4>Crear Cuenta</h4></a> </li>
+</header>
     <!--Header-->
     <div class="container">
         <div class="frame">
             <div class="nav">
-                <ul class"links">
-                    <li class="signin-active"><a class="btn">Sign in</a></li>
-                    <button id="CrearCuenta"><a href="./Formulario_Entrega.html">Registrarse</a></button>
+                <ul class="links">
+                    <li class="signin-active"><a class="btn">Crear Cuenta</a></li>
+                    <li class="forgot" ><a href="#">Forgot your password?</a></li>
                 </ul>
             </div>
             <div ng-app ng-init="checked = false">
                 <form class="form-signin" action="" method="post" name="form">
-                    <label for="username">Username</label>
+                    <label id="username" for="username">Username</label>
                     <input class="form-styling" type="text" name="username" placeholder="" />
-                    <label for="password">Password</label>
+                    <label id="password" for="password">Password</label>
                     <input class="form-styling" type="text" name="password" placeholder="" />
                     <input type="checkbox" id="checkbox" />
                     <label for="checkbox"><span class="ui"></span>Keep me signed in</label>
@@ -46,17 +46,14 @@
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" id="check"
                         ng-class="checked ? 'checked' : ''">
                         <path fill="#ffffff" d="M40.61,23.03L26.67,36.97L13.495,23.788c-1.146-1.147-1.359-2.936-0.504-4.314
-                    c3.894-6.28,11.169-10.243,19.283-9.348c9.258,1.021,16.694,8.542,17.622,17.81c1.232,12.295-8.683,22.607-20.849,22.042
-                    c-9.9-0.46-18.128-8.344-18.972-18.218c-0.292-3.416,0.276-6.673,1.51-9.578" />
+                        c3.894-6.28,11.169-10.243,19.283-9.348c9.258,1.021,16.694,8.542,17.622,17.81c1.232,12.295-8.683,22.607-20.849,22.042
+                        c-9.9-0.46-18.128-8.344-18.972-18.218c-0.292-3.416,0.276-6.673,1.51-9.578"></path>
+                    </svg>
                         <div class="successtext">
                             <p> Thanks for signing up! Check your email for confirmation.</p>
                         </div>
                 </div>
             </div>
-            <div class="forgot">
-                <a href="#">Forgot your password?</a>
-            </div>
-
             <div>
                 <div class="cover-photo"></div>
                 <div class="profile-photo"></div>

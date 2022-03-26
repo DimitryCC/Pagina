@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilo/reset.css">
     <link rel="stylesheet" href="./Estilo/boton.css">
     <link rel="stylesheet" href="./Estilo/Estilo.css">
     <link rel="stylesheet" href="./Estilo/CosasNoEsenciales.css">
@@ -11,15 +12,14 @@
     <title>Document</title>
 </head>
     <body>
-        <header class="header-holder">
-            <div><img src="fotos/corazon.jpg" id="logo"></div>
-            <li style="margin-left: 30px;" ></li>
-            <li class="boton"><h4>Inicio</h4></li>
-            <li class="boton"><h4>Buscar Pareja</h4></li>
-            <li class="boton"><h4>Perfil</h4></li>
-            <li class="boton"><h4>Cambiar plan de pagos<h4></li>
-            <li id="Seleccionado"><h4>Crear Cuenta</h4></li>
-        </header>
+    <header class="header-holder">
+        <div><img class="small-logo-picture" alt="Logo de la empresa" src="fotos/corazon.png" id="logo"></div>
+        <li style="margin-left: 30px;" ></li>
+        <li class="boton"> <a href="Index.html"> <h4>Inicio</h4></a></li>
+        <li class="boton"> <a href="Pagian_Personal.html"> <h4>Perfil</h4></a></li>
+        <li class="boton"> <a href="Registrarse.html"> <h4>Cambiar plan de pagos</h4></a></li>
+        <li class="boton-Seleccionado"> <a href="Formulario_Entrega.html" > <h4>Crear Cuenta</h4></a> </li>
+    </header>
     <br/>
     <div id="Contenedor_Form">
     <form name="formulario" id="formulario" method="post" novalidate onsubmit="return validarform()">

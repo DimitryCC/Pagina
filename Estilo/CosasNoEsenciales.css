@@ -1,23 +1,30 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
 .header-holder{
     background-color: #ff8787;
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 80px;
-    display: flex;
     flex: 1;
     height: 100%;
     align-items: center;
+    opacity: 0.6;
 }
-#Seleccionado{
-    background-color: #87ffff;
+.boton-Seleccionado{
+    background-color: #87ffcd;
     display: block;
+    width: 200px;
+    height: 80px;
     font-size: 15px;
     padding: 0 15px;
     height: 100%;
     line-height: 70px;
     text-transform: uppercase;
     transition: 0.1s ease;
+    opacity: 1;
 }
 .boton{
     display: block;
@@ -26,10 +33,22 @@
     height: 100%;
     line-height: 70px;
     text-transform: uppercase;
-    transition: 0.1s ease;
+    transition: 0.2s ease;
 }
 .header-holder :hover{
     background-color: #87ffff ;
+    color: black;
+    opacity: 1;
+}
+.boton-Seleccionado a{
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+.boton a{
+    text-decoration: none;
+    color: black;
+    outline: none;
 }
 #logo{
     margin-top: 4px;
@@ -40,4 +59,18 @@
 .copyright{
     padding: 400px;
     align: center;
+}
+.small-logo-picture {
+    border: 2px solid #50597b;
+    width: 40px;
+    height: 40px;
+}
+.container {
+    float: left;
+    width: 300px;
+}
+.block {
+    margin-bottom: 25px;
+    background: #394264;
+    border-radius: 5px;
 }

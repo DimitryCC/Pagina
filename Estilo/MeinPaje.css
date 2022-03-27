@@ -21,17 +21,23 @@ h1, h2, p, a, span{
 }
 .left-container{
     display: flex;
-    flex-direction: column;
+    width: 20%;
+    flex-direction: Column;
     background-color: #a12355;
 }
 #Imagen-Usuario{
-    height: 150px;
+    margin-top:  20%;
+    margin-left: 25%;
+    height: 250px;
     width: 150px;
+    border-radius: 5px;
 }
 .middle-container{
+    width: 60%;
     background-color: aquamarine;
 }
 .right-container{
+    width: 20%;
     background-color: chocolate;
 }
 .titular {
@@ -155,4 +161,10 @@ h1, h2, p, a, span{
     line-height: 34px;
     background: #e64c65;
     border-radius: 100%;
+}
+.usuario{
+    height: 300px;
+    width: 200px;
+    margin: 15px;
+    background-color: lime;
 }
